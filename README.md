@@ -8,10 +8,10 @@ For example, the first line of the output would be as follows:<br>
 
 3. **Dom-Code.java:**
 A program that uses a DOM parser to generate a new version of the given XML file (`Example.xml`) such that:
-- It only includes `FacilitySite` elements where the `LocationAddressStateCode` is WY.
-- The `GeneralProfileElectronicAddress` tag and its children are removed.
-- Since we are now only keeping centers related to WY, the `LocationAddressStateCode` tag is also removed.
-- The `Program` tag and all its children, except `ElectronicAddressText`, are removed. Move the `ElectronicAddressText` tag outside of `Program` as a direct child of `FacilitySite` and wrap its content inside a new tag named `URL`. For example, the following XML code: <br><br>
+ - It only includes `FacilitySite` elements where the `LocationAddressStateCode` is WY.
+ - The `GeneralProfileElectronicAddress` tag and its children are removed.
+ - Since we are now only keeping centers related to WY, the `LocationAddressStateCode` tag is also removed.
+ - The `Program` tag and all its children, except `ElectronicAddressText`, are removed. Move the `ElectronicAddressText` tag outside of `Program` as a direct child of `FacilitySite` and wrap its content inside a new tag named `URL`. For example, the following XML code:
 ```
 <FacilitySite> 
   ... 
@@ -24,7 +24,7 @@ A program that uses a DOM parser to generate a new version of the given XML file
   </Program> 
 </FacilitySite>
 ```
-  <br><br>should be transformed into:<br><br>
+  should be transformed into:
 ```
 <FacilitySite>
   ...
@@ -33,7 +33,7 @@ A program that uses a DOM parser to generate a new version of the given XML file
   </ElectronicAddressText>
 </FacilitySite>
 ```
-<br><br>Note that some `FacilitySite` elements may not have the `Program` tag, which requires no action. However, some may have multiple `Program` tags, and all of them should be removed, while the values of `ElectronicAddressText` are placed in `URL` tags similar to the example below:<br><br>
+Note that some `FacilitySite` elements may not have the `Program` tag, which requires no action. However, some may have multiple `Program` tags, and all of them should be removed, while the values of `ElectronicAddressText` are placed in `URL` tags similar to the example below:
 ```
 <FacilitySite>
 ...
