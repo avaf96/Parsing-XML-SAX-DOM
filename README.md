@@ -2,11 +2,14 @@
 
 1.  **Sax-Cod.java:**
 A program that parses `EPAXML.xml` file using the SAX method and generates output in the exact format below for centers where their `LocationAddressStateCode` is WY:
+
 registryId of FacilitySite: LatitudeMeasure, LongitudeMeasure
+
 For example, the first line of the output would be as follows:
+
 110022448289: 42.755711, -110.928876
 
-2. **Dom-Code.java:**
+3. **Dom-Code.java:**
 A program that uses a DOM parser to generate a new version of the given XML file (`Example.xml`) such that:
 - It only includes `FacilitySite` elements where the `LocationAddressStateCode` is WY.
 - The `GeneralProfileElectronicAddress` tag and its children are removed.
