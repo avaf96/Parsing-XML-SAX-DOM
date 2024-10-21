@@ -1,6 +1,6 @@
 1-
 Sax-Cod.java:
-a program that parses Example.xml file using the SAX method and generates output in the exact format below for centers where their LocationAddressStateCode is WY:
+a program that parses EPAXML.xml file using the SAX method and generates output in the exact format below for centers where their LocationAddressStateCode is WY:
 registryId of FacilitySite: LatitudeMeasure, LongitudeMeasure
 For example, the first line of the output would be as follows:
 110022448289: 42.755711, -110.928876
@@ -44,4 +44,4 @@ Note that some FacilitySite elements may not have the Program tag, which require
 
 
 
-* The output files are stored in the output.rar file.
+* The output files are stored in the outputs.rar file.
