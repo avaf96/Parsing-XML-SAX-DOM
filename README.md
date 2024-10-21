@@ -12,7 +12,7 @@ A program that uses a DOM parser to generate a new version of the given XML file
 - The `GeneralProfileElectronicAddress` tag and its children are removed.
 - Since we are now only keeping centers related to WY, the `LocationAddressStateCode` tag is also removed.
 - The `Program` tag and all its children, except `ElectronicAddressText`, are removed. Move the `ElectronicAddressText` tag outside of `Program` as a direct child of `FacilitySite` and wrap its content inside a new tag named `URL`. For example, the following XML code:
-        ```
+        ```xml
         <FacilitySite> 
           ... 
           <Program> 
