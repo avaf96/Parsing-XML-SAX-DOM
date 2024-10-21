@@ -1,4 +1,5 @@
 * The output files are stored in the outputs.rar file.
+
 1- Sax-Cod.java:
 a program that parses EPAXML.xml file using the SAX method and generates output in the exact format below for centers where their LocationAddressStateCode is WY:
 registryId of FacilitySite: LatitudeMeasure, LongitudeMeasure
@@ -16,7 +17,7 @@ A program that uses a DOM parser to generate a new version of the given XML file
                     <Program> 
                       ... 
                       <ProgramProfileElectronicAddress> 
-                        <ElectronicAddressText>http://example.com</ElectronicAddressText> 
+                        <ElectronicAddressText>http:// example. com</ElectronicAddressText> 
                         <ElectronicAddressTypeName>URL</ElectronicAddressTypeName> 
                       </ProgramProfileElectronicAddress> 
                     </Program> 
@@ -26,7 +27,7 @@ A program that uses a DOM parser to generate a new version of the given XML file
                 <FacilitySite>
                     ...
                     <ElectronicAddressText>
-                      <URL>http://example.com</URL>
+                      <URL>http:// example. com</URL>
                     </ElectronicAddressText>
                 </FacilitySite>
                 
@@ -34,9 +35,9 @@ Note that some FacilitySite elements may not have the Program tag, which require
                 <FacilitySite>
                     ...
                     <ElectronicAddressText>
-                      <URL>http://example1.com</URL>
-                      <URL>http://example2.com</URL>
-                      <URL>http://example3.com</URL>
+                      <URL>http:// example1. com</URL>
+                      <URL>http:// example2. com</URL>
+                      <URL>http:// example3. com</URL>
                     ...
                     </ElectronicAddressText>
                 </FacilitySite>
